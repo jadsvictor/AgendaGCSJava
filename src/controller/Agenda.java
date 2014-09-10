@@ -23,6 +23,9 @@ public class Agenda {
 			this.contatos.add(contato);
 			return true;
 		}
-		return false;
+		else{
+			System.out.println("O Contato ja existe!!");
+			return false;
+		}
 	}
 }
