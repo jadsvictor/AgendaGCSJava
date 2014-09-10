@@ -1,6 +1,6 @@
 package controller;
 
-import model.contato
+import model.contato;
 
 public class Agenda {
 	
