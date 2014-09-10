@@ -12,6 +12,26 @@ public class Contato {
 
 	}
 	
+	@Override
+	public String toString() {
+		return "Contato [nome=" + nome + ", telefone=" + telefone
+				+ ", endereco=" + endereco + ", email=" + email + ", idade="
+				+ idade + "]";
+	}
+
+
+
+	public Contato(String nome, String telefone, String endereco, String email,
+			int idade) {
+		this.nome = nome;
+		this.telefone = telefone;
+		this.endereco = endereco;
+		this.email = email;
+		this.idade = idade;
+	}
+
+
+
 	public String getNome() {
 		return nome;
 	}
