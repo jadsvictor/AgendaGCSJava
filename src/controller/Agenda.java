@@ -10,7 +10,7 @@ public class Agenda {
 			
 	}
 
-	public Contato pesquisar(String nome){
+	public Contato pesquisar(final String nome){
 		for(Contato c : this.contatos){
 			if(c.getNome().equals(nome)){
 				return c;
@@ -18,7 +18,7 @@ public class Agenda {
 		}
 		return null;
 	}
-	public boolean adicionarContatos(Contato contato){
+	public boolean adicionarContatos(final Contato contato){
 		if(pesquisar(contato.getNome()) == null){
 			this.contatos.add(contato);
 			return true;
