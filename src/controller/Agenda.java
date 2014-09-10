@@ -9,7 +9,7 @@ public class Agenda {
 	private ArrayList<Contato> contatos;
 	
 	public Agenda(){
-			
+			this.contatos = new ArrayList<Contato>();
 	}
 
 	public Contato pesquisar(final String nome){
@@ -20,6 +20,7 @@ public class Agenda {
 		}
 		return null;
 	}
+	
 	public boolean adicionarContatos(final Contato contato){
 		if(pesquisar(contato.getNome()) == null){
 			this.contatos.add(contato);
@@ -29,5 +30,15 @@ public class Agenda {
 			System.out.println("O Contato ja existe!!");
 			return false;
 		}
+	}
+	
+	public boolean deletarContato(final String nome){
+		for(Contato c : contatos){
+			if(c.getNome().equals(nome)){
+				this.contatos.remove(c);
+				return true;
+			}
+		}
+		return false;
 	}
 }
