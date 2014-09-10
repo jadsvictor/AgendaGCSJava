@@ -1,6 +1,8 @@
 package controller;
 
-import model.contato;
+import java.util.ArrayList;
+
+import model.Contato;
 
 public class Agenda {
 	
