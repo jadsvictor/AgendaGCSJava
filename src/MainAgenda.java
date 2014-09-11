@@ -40,7 +40,7 @@ public class MainAgenda {
 					System.out.println("Digite o endereco do contato");
 					endereco = scan.nextLine();
 					System.out.println("Digite a idade do contato");
-					idade = Integer.parseInt(scan.nextLine());1
+					idade = Integer.parseInt(scan.nextLine());
 					
 					Contato contato = new Contato(nome, telefone, endereco, email, idade);
 					agenda.adicionarContatos(contato);
